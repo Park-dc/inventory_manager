@@ -11,7 +11,7 @@ public class Inventory {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
-    private Long inventoryQty;
+    private Long qty;
     private Long productId;
     private String productName;
 
@@ -24,13 +24,7 @@ public class Inventory {
     public void setId(Long id) {
         this.id = id;
     }
-    public Long getInventoryQty() {
-        return inventoryQty;
-    }
 
-    public void setInventoryQty(Long inventoryQty) {
-        this.inventoryQty = inventoryQty;
-    }
     public Long getProductId() {
         return productId;
     }
@@ -45,5 +39,13 @@ public class Inventory {
     public void setProductName(String productName) {
         this.productName = productName;
     }
+
+	public Long getQty() {
+		return qty;
+	}
+
+	public void setQty(Long qty) {
+		this.qty = qty;
+	}
 
 }

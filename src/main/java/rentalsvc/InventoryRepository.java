@@ -1,8 +1,8 @@
 package rentalsvc;
 
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface InventoryRepository extends PagingAndSortingRepository<Inventory, Long>{
+public interface InventoryRepository extends CrudRepository<Inventory, Long>{
 
 
 }
