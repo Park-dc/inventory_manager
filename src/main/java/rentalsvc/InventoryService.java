@@ -42,6 +42,7 @@ public class InventoryService {
 	    return inventory.getQty();
 	}
 	
+	
     /**
      * Rental 요청시 재고 확인
      * 재고 부족시 재고부족 Event 발생 
